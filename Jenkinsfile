@@ -9,10 +9,14 @@ pipeline {
 
   stages {
 
-    stage('Checkout Source') {
-      steps {
-        git 'git@github.com:yandi527/demo.git'
-      }
+    stage('Checkout') {
+          steps {
+            checkout([
+                    $class                           : 'GitSCM',
+                    branches                         : [[name: '*/main']],
+                    doGenerateSubmoduleConfigurations: false
+            ])
+          }
     }
 
     stage('Build image') {
