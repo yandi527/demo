@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set +x
 
-LOCAL_TAG=twuc-$TEAM:$SERVICE-$BUILD_NUMBER
+LOCAL_TAG=demo
 REMOTE_TAG=$ECR_HOST/$LOCAL_TAG
 
 username=$(cat /etc/docker-registry/username)
