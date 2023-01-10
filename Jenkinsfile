@@ -3,6 +3,10 @@ pipeline {
   environment {
     dockerimagename = "demo"
     dockerImage = ""
+    tools {
+      <...>
+      'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'docker'
+    }
   }
 
   agent any
@@ -22,7 +26,9 @@ pipeline {
     stage('Build image') {
       steps{
         script {
-          dockerImage = docker.build("demo")
+          docker.withTool('docker'){
+              dockerImage = docker.build("demo")
+          }
         }
       }
     }
