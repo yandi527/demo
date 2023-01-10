@@ -21,11 +21,11 @@ pipeline {
 
     stage('Build image') {
       steps{
-        script {
-        sh'''
-            echo"90909090990990"
-                        pwd
+        sh '''
+                 set +x
+                 ./pwd.sh
         '''
+        script {
           dockerImage = docker.build dockerimagename
         }
       }
