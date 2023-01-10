@@ -5,5 +5,5 @@ pwd
 ls
 ./gradlew clean compileJava compileTestJava bootJar --info
 echo "1111111111111111111111"
-cd /Users/yandi.lin/.jenkins/workspace/demo/build
+cd /Users/yandi.lin/.jenkins/workspace/demo/build/libs
 ls
