@@ -25,9 +25,6 @@ pipeline {
                  set +x
                  ./pwd.sh
         '''
-        script {
-          dockerImage = docker.build dockerimagename
-        }
       }
     }
 
