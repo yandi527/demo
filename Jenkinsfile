@@ -22,8 +22,10 @@ pipeline {
     stage('Build image') {
       steps{
         script {
+        sh'''
             echo"90909090990990"
-            pwd
+                        pwd
+        '''
           dockerImage = docker.build dockerimagename
         }
       }
