@@ -4,3 +4,4 @@ echo "90909090909099090"
 pwd
 cd /Users/yandi.lin/.jenkins/workspace/demo/
 ls
+gradle build
