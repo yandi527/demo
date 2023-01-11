@@ -4,3 +4,4 @@ set +x
 echo "+++++++++++++++++++++++"
 pwd
 docker build -t demo -f ./Dockerfile .
+
