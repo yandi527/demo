@@ -10,6 +10,6 @@ public class DemoController {
     @GetMapping("/hello")
     @ResponseStatus(HttpStatus.OK)
     public String greeting() {
-        return "hello world";
+        return "hello world!";
     }
 }
