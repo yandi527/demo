@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set +x
-docker login -u aishasha111 -p L27705.yandi
+docker login localhost:5005 -u admin -p 0000
 docker tag demo:latest localhost:5005/demo:demo
 docker push aishasha111/demo:demo
 
