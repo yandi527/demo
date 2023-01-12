@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: demo
-      image: localhost:5005/demo:latest
+      image: 192.168.10.194:5005/demo:demo
