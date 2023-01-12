@@ -18,6 +18,14 @@ pipeline {
                 ])
             }
         }
+        stage('Test') {
+            steps {
+                sh '''
+         set +x
+         run-test.sh
+         '''
+            }
+        }
 
         stage('Build image') {
             steps {

@@ -27,6 +27,9 @@ dependencies {
 	implementation 'mysql:mysql-connector-java:8.0.31'
 	runtimeOnly 'mysql:mysql-connector-java'
 	implementation 'org.projectlombok:lombok:1.18.24'
+	testImplementation 'org.assertj:assertj-core:3.24.1'
+	testImplementation 'junit:junit:4.13.2'
+
 }
 
 tasks.named('test') {
