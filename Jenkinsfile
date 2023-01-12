@@ -25,6 +25,7 @@ pipeline {
          set +x
          ./test.sh
          '''
+
             }
         }
         stage('Build image') {
