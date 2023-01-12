@@ -19,6 +19,14 @@ pipeline {
             }
         }
 
+        stage('Test') {
+            steps {
+                sh '''
+         set +x
+         ./test.sh
+         '''
+            }
+        }
         stage('Build image') {
             steps {
                 sh '''
