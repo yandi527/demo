@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh '''
          set +x
-         run-test.sh
+         test.sh
          '''
             }
         }
